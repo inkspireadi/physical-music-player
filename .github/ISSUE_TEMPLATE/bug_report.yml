@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem in the web player or macOS wrapper.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Web player
+        - macOS desktop widget app
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include the expected result and the actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. Open…\n2. Click…\n3. See…"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS version, browser, Node version
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and removed private data from this report.
+          required: true

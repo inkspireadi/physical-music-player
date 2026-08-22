@@ -1,0 +1,15 @@
+.DS_Store
+AGENTS.md
+CLAUDE.md
+.next/
+node_modules/
+*.tsbuildinfo
+public/audio/*.wav
+
+macos/PhysicalMusicPlayer/.build/
+macos/PhysicalMusicPlayer/.swiftpm/
+macos/PhysicalMusicPlayer/dist/
+
+.env
+.env.*
+!.env.example
