@@ -4,7 +4,8 @@ import SwiftUI
 @MainActor
 final class PlayerSettings: ObservableObject {
     private static let key = "playerURL"
-    private static let fallback = "http://localhost:3000/"
+    private static let fallback = "https://inkspireadi.github.io/physical-music-player/"
+    private static let localhost = "http://localhost:3000/"
 
     @Published var urlText: String
 
@@ -29,7 +30,7 @@ final class PlayerSettings: ObservableObject {
     }
 
     func reset() {
-        urlText = Self.fallback
+        urlText = Self.localhost
         save()
     }
 }
@@ -47,7 +48,7 @@ struct SettingsView: View {
                 Button("Save") { settings.save() }
                     .keyboardShortcut(.defaultAction)
             }
-            Text("Use http://localhost:3000 while developing, then replace it with the public HTTPS URL after deployment.")
+            Text("The release uses the hosted GitHub Pages player. Choose localhost only while developing the web app locally.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }

@@ -2,6 +2,7 @@
 AGENTS.md
 CLAUDE.md
 .next/
+out/
 node_modules/
 *.tsbuildinfo
 public/audio/*.wav

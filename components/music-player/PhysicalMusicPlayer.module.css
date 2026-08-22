@@ -256,6 +256,10 @@
   min-width: 48px;
 }
 
+.screenScrubber {
+  min-width: 80px;
+}
+
 @media (hover: none) {
   .screenControls {
     opacity: 0.82;
@@ -560,6 +564,12 @@
 .icon .playIcon {
   width: 26px;
   height: 28px;
+  stroke: none;
+}
+
+.icon .skipIcon {
+  width: 26px;
+  height: 32px;
   stroke: none;
 }
 

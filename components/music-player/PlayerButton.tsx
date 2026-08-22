@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import type { ReactNode } from "react";
 import styles from "./PhysicalMusicPlayer.module.css";
 
@@ -28,11 +27,19 @@ export function PlayerButton({ label, onPress, children, position }: PlayerButto
 }
 
 export function PreviousIcon() {
-  return <Image className={styles.iconAsset} src="/icons/previous.svg" alt="" width={26} height={32} />;
+  return (
+    <svg className={styles.skipIcon} viewBox="0 0 26 32" aria-hidden="true">
+      <path d="M1.53 0C.68 0 0 .69 0 1.55v28.9C0 31.31.68 32 1.53 32s1.53-.69 1.53-1.55V19.07c1.38 1.34 3.69 2.73 6.94 4.67l5.53 3.3c4.69 2.81 7.04 4.21 8.75 2.94C26 28.71 26 25.58 26 19.3v-6.61c0-6.27 0-9.41-1.72-10.68-1.71-1.27-4.06.14-8.75 2.94L10 8.26c-3.25 1.94-5.56 3.33-6.94 4.67V1.55C3.06.69 2.37 0 1.53 0Z" />
+    </svg>
+  );
 }
 
 export function NextIcon() {
-  return <Image className={styles.iconAsset} src="/icons/next.svg" alt="" width={26} height={32} />;
+  return (
+    <svg className={styles.skipIcon} viewBox="0 0 26 32" aria-hidden="true">
+      <path d="M24.47 0C25.32 0 26 .69 26 1.55v28.9c0 .86-.68 1.55-1.53 1.55s-1.53-.69-1.53-1.55V19.07c-1.38 1.34-3.69 2.73-6.94 4.67l-5.53 3.3c-4.69 2.81-7.04 4.21-8.75 2.94C0 28.71 0 25.58 0 19.3v-6.61C0 6.42 0 3.29 1.72 2.02 3.43.75 5.78 2.15 10.47 4.96L16 8.26c3.25 1.94 5.56 3.33 6.94 4.67V1.55C22.94.69 23.63 0 24.47 0Z" />
+    </svg>
+  );
 }
 
 export function PlayIcon() {

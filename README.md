@@ -38,7 +38,7 @@ chmod +x build-app.sh
 open "dist/Physical Music Player.app"
 ```
 
-The wrapper defaults to `http://localhost:3000/`. Its Settings window accepts a public HTTPS deployment URL for a standalone release. See [macos/PhysicalMusicPlayer/README.md](macos/PhysicalMusicPlayer/README.md) for packaging notes.
+The release wrapper defaults to the hosted player at `https://inkspireadi.github.io/physical-music-player/`, so it does not need a local server. Its Settings window can switch to localhost or another deployment. See [macos/PhysicalMusicPlayer/README.md](macos/PhysicalMusicPlayer/README.md) for packaging notes.
 
 WidgetKit widgets are timeline-rendered SwiftUI snapshots and cannot host the live YouTube web player. The included native wrapper provides the practical desktop-widget behavior—frameless, floating, movable, visible across Spaces, and recoverable from the menu bar—without losing audio or video.
 

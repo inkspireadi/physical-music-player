@@ -29,7 +29,7 @@ open "dist/Physical Music Player.app"
 The generated app is ad-hoc signed for local use. A public release should use your Apple Developer ID, hardened runtime, notarization, and a unique bundle identifier.
 The script also creates `dist/Physical-Music-Player-macOS.zip`; use that clean archive for GitHub release uploads.
 
-The default URL is `http://localhost:3000/`. Set `PHYSICAL_PLAYER_URL=https://your-deployment.example` before launching from a terminal, or change the saved URL in the app's Settings window.
+The release defaults to `https://inkspireadi.github.io/physical-music-player/`, so it works without a local development server. Set `PHYSICAL_PLAYER_URL=https://your-deployment.example` before launching from a terminal, or change the saved URL in the app's Settings window. Use **Use Localhost** only while developing the web app locally.
 
 ## Why this is a desktop app, not WidgetKit
 
